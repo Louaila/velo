@@ -50,6 +50,7 @@ header nav{
     position: fixed;
     top: 50%;
     left:10%;
+    transform: translateY(-50%);
 }
 
 header nav ul{
@@ -152,8 +153,14 @@ main section>img:hover div{
 
 }    
 footer{
-    background-color: grey;
-    text-align: center;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-size: 20px;
+    color: white;
+    front font-family:"bran";
 }
 
     
