@@ -3,6 +3,36 @@
     margin: 0;
 }
 
+/*********************************************
+FONT
+********************************************/
+
+@font-face {
+    font-family: 'Bran';
+    src: url('../font/BrannbollFet.eot');
+    src: url('../font/BrannbollFet.eot?#iefix') format('embedded-opentype'),
+        url('../font/BrannbollFet.woff2') format('woff2'),
+        url('../font/BrannbollFet.woff') format('woff'),
+        url('../font/BrannbollFet.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('../font/FuturaExtended.eot');
+    src: url('../font/FuturaExtended.eot?#iefix') format('embedded-opentype'),
+        url('../font/FuturaExtended.woff2') format('woff2'),
+        url('../font/FuturaExtended.woff') format('woff'),
+        url('../font/FuturaExtended.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/****** FIN FONTS ******/
+
 html{
     scroll-behavior: smooth;
 }
@@ -10,7 +40,7 @@ html{
 
 header{
     height: 100vh;
-    background: url(../img/fond.jpg) center bottom fixed;
+    background: url("../img/fond.jpg") bottom right;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -23,24 +53,31 @@ header nav{
 }
 
 header nav ul{
-    list-style: none;
+
+list-style: none;
+}
+
+header nav ul li{
+
+list-style: none;
+ padding: 10px, 0;
+text-shadow: 2px 2px 4px;
  
  }
  header nav ul li a{
-     text-decoration:none; 
-     color: yellow; 
+    font-family: 'Futura';
+     text-decoration:none; /* supprime le soulignement */
+     color: white; 
      font-family: Arial, Helvetica, sans-serif; 
      font-weight:bold;
+     font-size: 30PX;
      text-transform: uppercase;
  }
 
- header nav ul{
- margin: 8px;
- }
+
 li:nth-of-type(1){
 
 border-bottom: 2px solid white;
-
 }
      
 header div {
@@ -52,6 +89,17 @@ header div {
     text-align: center ;
     border-radius: 50%;
     background: #333;
+}
+
+header h1{
+    font-size: 50px;
+    font-family: 'Bran';
+text-align: center;
+color:  white;
+line-height: 56px;
+}
+header h1::first-letter{
+    text-transform: uppercase;
 }
 main{
     display: flex;
